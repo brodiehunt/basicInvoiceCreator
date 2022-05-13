@@ -5,18 +5,56 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Basic Invoice Creator</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-  <header class="page_header">
-    <h1 class="page_title">Invoice creator</h1>
-    <p class="supporting_text">Thanks for choosing GoodCorp LLC!</p>
-  </header>
-  <div class="service_button_container">
-    <button class="service_button" id="wash_btn">Wash Car: $10</button>
-    <button class="service_button" id="mow_btn">Wash Car: $10</button>
-    <button class="service_button" id="weed_btn">Wash Car: $10</button>
+  <div class="wrapper">
+    <header class="page_header">
+      <h1 class="page_title">Invoice creator</h1>
+      <p class="supporting_text">Thanks for choosing GoodCorp LLC!</p>
+    </header>
+    <div class="service_button_container">
+      <button class="service_button" id="wash_btn">Wash Car: $10</button>
+      <button class="service_button" id="mow_btn">Mow Lawn: $20</button>
+      <button class="service_button" id="weed_btn">Pull Weeds: $30</button>
+    </div>
+    <div class="label_container">
+      <p class="label left">TASK</p>
+      <p class="label right">TOTAL</p>
+    </div>
+    <div class="services_container" id="services_container">
+      <!-- <div class="service_item">
+        <p class="item_description">Wash Car</p>
+        <p class="item_price"><span class="dollar_sign">$</span>10</p>
+      </div>
+      <div class="service_item">
+        <p class="item_description">Mow Lawn</p>
+        <p class="item_price"><span class="dollar_sign">$</span>20</p>
+      </div>
+      <div class="service_item">
+        <p class="item_description">Pull Weeds</p>
+        <p class="item_price"><span class="dollar_sign">$</span>30</p>
+      </div> -->
+    </div>
+    <div class="separating_div">
+
+    </div>
+    <div class="label_container">
+      <p class="label left">NOTES</p>
+      <p class="label right">TOTAL AMOUNT</p>
+    </div>
+    <div class="price_container">
+      <p class="notes">We accept cash, credit card and Paypal</p>
+      <p class="price">$<span id="total_price">0</span></p>
+    </div>
+    <p class="invoice_sent none" id="invoice_sent">Your Invoice has been sent! Thank you</p>
+    <button class="send_invoice" id="send_invoice_btn">
+        <img class="button_icon" src="/components/email_icon.png" alt="Email icon">
+        <span class="button_text">Send Invoice</span>
+    </button>
   </div>
   
 

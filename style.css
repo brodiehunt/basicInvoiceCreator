@@ -2,4 +2,199 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
 }
+
+.wrapper {
+  width: 550px;
+  background-color: #1F2937;
+}
+
+.page_title {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.supporting_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+  margin-top: 0;
+}
+
+.page_header {
+  width: 550px;
+  height: 190px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3A69D2;
+}
+
+.service_button_container {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service_button {
+  height: 45px;
+  width: 145px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4A4E74;
+  background: #D1D4F4;
+  border: 1px solid #D5D4D8;
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+.label_container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.label {
+  color: #D5D4D8;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.services_container {
+  width: 90%;
+  margin: 0 auto;
+}
+.service_item {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: start;
+}
+
+.item_description {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #F5F5F5;
+  margin: 20px 0;
+}
+
+.item_price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 20px;
+  color: #F5F5F5;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: 20px 0;
+}
+
+.remove_button {
+  position: relative;
+  left: 7px;
+  bottom: -13px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: underline;
+  color: #F5F5F5;
+  transition: all 0.2s ease-in;
+}
+
+.remove_button:hover {
+  transform: scale(1.1);
+}
+
+.dollar_sign {
+  color: #918E9B;
+}
+
+.separating_div {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #C3C6DB;
+}
+
+.price_container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.notes {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #F5F5F5;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 32px;
+  color: #F5F5F5;
+  position: absolute;
+  right: 0px;
+  top: -20px;
+}
+
+.invoice_sent {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #D1D4F4;
+  border-radius: 3px;
+  padding: 5px 0px;
+
+}
+.invoice_sent.none {
+  display: none;
+}
+
+.send_invoice {
+  width: 90%;
+  height: 44px;
+  margin: 30px auto;
+  background: #3A69D2;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 7px;
+  padding: 9px 17px 9px 15px;
+  gap: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button_icon {
+  height: 90%;
+  width: auto;
+}
+
+
+
+
+
